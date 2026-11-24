@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --color-brand-900: #082b78;
+  --color-brand-800: #0b3fa8;
+  --color-brand-700: #1449bd;
+  --color-brand-600: #1d4ed8;
+  --color-brand-500: #2563eb;
+  --color-brand-100: #dbeafe;
+  --color-brand-50: #eff6ff;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Thermal 58mm receipt print mode */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #thermal-receipt-print,
+  #thermal-receipt-print * {
+    visibility: visible;
+  }
+  #thermal-receipt-print {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 58mm;
+    padding: 4mm;
+    margin: 0;
+    background: #ffffff;
+    color: #000000;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    line-height: 1.35;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}

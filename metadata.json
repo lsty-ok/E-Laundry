@@ -1,0 +1,6 @@
+{
+  "name": "E-Laundry",
+  "description": "Platform laundry modern UMKM Indonesia yang menggabungkan layanan Self-Service, Full-Service, dan Hybrid lengkap dengan pemesanan online, pelacakan cucian, POS kasir, dan dashboard pemilik.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
